@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: auto;
+    padding: auto;
+    
+}
+body{
+	margin-top:40px;
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+    background-color: #1a1b26;
+    display: grid;
+    place-content: center;
+    color:white;
+}
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        
+      }
+
+      table {
+        width: auto;
+        height: auto;
+      }
+
+      p,
+      button {
+        text-align: center;
+      }
+
+      td,
+      th {
+        border: solid black;
+        padding: 15px;
+        text-align: center;
+        margin: 15px;
+      }
+
+       
+      
+      .h12{
+      	text-align: center;
+      }
+      #text_delete{
+      	background-color: hsl(0, 74%, 40%);
+      	color: white;
+      	font-size: 20px;
+      }
+      .cta {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background: none;
+    border: none;
+    padding: 12px 18px;
+    position: relative;
+}
+      
+      .cta:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(calc(100% + 4px));
+    width: 45px;
+    height: 45px;
+    background: hsl(0, 74%, 40%);
+    border-radius: 50px;
+    transition: transform .25s .25s cubic-bezier(0, 0, .5, 2), width .25s cubic-bezier(0, 0, .5, 2);
+    z-index: -1;
+}
+
+	.cta:hover::before {
+    width: 100%;
+    transform: translateY(-50%) translateX(-18px);
+    transition: transform .25s cubic-bezier(0, 0, .5, 2), width .25s .25s cubic-bezier(0, 0, .5, 2);
+}
+
+	.cta i {
+    margin-left: 5px;
+    transition: transform .25s .4s cubic-bezier(0, 0, .5, 2);
+}
+
+	.cta:hover i {
+    transform: translateX(3px);
+}
+
+span{
+	margin-top: 5px;
+	color: white;
+	font-size:23px;
+	}
+
+.dino_name{
+	color:white;
+}
+/* ======================== */
+
+.logout_button{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 3px solid 
+    #3c67e3;
+    border-radius: 10px;
+}
+
+.logout_button:hover{
+    animation: pulsate 1s 
+    ease-in-out; 
+}
+
+@keyframes pulsate {
+    
+    0%{
+        box-shadow: 
+        0 0 25px #5ddcff,
+        0 0 50px #4e00c2;
+    }
+}	
+
+h1{
+	text-align:center;
+}

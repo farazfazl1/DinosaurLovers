@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: auto;
+    padding: auto;
+}
+body{
+	margin-top:40px;
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+    background-color: #1a1b26;
+    display: grid;
+    place-content: center;
+    color:white;
+}
+      h1 {
+        text-align: center;
+        color: white;
+      }
+       form {
+        /* background-color: hsl(240, 61%, 73%); */
+        color: white;
+        border: solid black;
+        width: 500px;
+        height: auto;
+        padding: 15px;
+      } 
+
+      label {
+        font-size: 22px;
+        margin-left: 5px;
+        display: block;
+      }
+      .our_errors{
+      	display: block;
+      }
+
+/* ======================== */
+
+.loader {
+	margin-top:20px;
+	margin-bottom:15px;
+    width: 300px;
+    height: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.loader span{
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: auto;
+}
+.ball {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: bounce .5s alternate
+    infinite;
+}
+.ball:nth-child(2) {
+    animation-delay: .16s;
+}
+.ball:nth-child(3) {
+    animation-delay: .32s;
+}
+@keyframes bounce {
+    from {
+        transform: scaleX(1.25);
+    }
+    to{
+        transform: 
+        translateY(-50px) scaleX(1);
+    }
+}
+
+/* ======================== */
+.button{
+	margin-top: 5px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    outline: 2px solid #fff;
+    padding: 5px 10px;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+    color:black;
+    font-size:18px;
+}
+
+.button:hover{
+    color: blue;
+}
+
+#cancel:hover{
+	color:red;
+}
+#cancel{
+	background-color: white;
+	margin-top:10px;
+}
+
+.button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 150%;
+    height: 100%;
+    background-color: #fff;
+    transform: scaleX(0) skewX(35deg);
+    transform-origin: left;
+    z-index: -1;
+    transition: transform 1s;
+}
+
+.button:hover::before{
+    transform: scaleX(1) skewX(35deg);
+}
